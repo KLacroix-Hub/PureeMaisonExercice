@@ -1,0 +1,222 @@
+/* INTEGRATION DES FONTS */
+@font-face {
+  font-family: "Rebond Grotesque Light";
+  src: url("../Fonts/RebondGrotesque-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Rebond Grotesque Medium";
+  src: url("../Fonts/RebondGrotesque-Medium.otf") format("otf");
+}
+h1 {
+  font-family: "Rebond Grotesque Light", sans-serif;
+  font-weight: 200;
+  font-size: 110px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+h2 {
+  font-family: "Rebond Grotesque Light", sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 56px;
+  letter-spacing: -4px;
+  text-align: start;
+  color: #fff;
+}
+
+h3 {
+  font-family: "Rebond Grotesque Light", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+p {
+  font-family: "Rebond Grotesque Light", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 15px;
+  color: #A6A6A6;
+}
+
+.cursor {
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  transition: 0.05s;
+  border: 1px solid #fff;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+*, body {
+  margin: 0;
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background-color: #1C1C1C;
+}
+main #mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/bkgImage.jpeg);
+  background-size: cover;
+  background-position-y: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main #mainContainer #exercicePresentation {
+  width: 100vw;
+}
+main #mainContainer #exercicePresentation #rowContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main #mainContainer #exercicePresentation #rowContainer #firstElTop {
+  padding-left: 60px;
+  padding-top: 75px;
+  overflow: hidden;
+}
+main #mainContainer #exercicePresentation #rowContainer #firstElTop .textH3 {
+  overflow: hidden;
+}
+main #mainContainer #exercicePresentation #rowContainer #secondElTop {
+  padding-right: 60px;
+  padding-top: 75px;
+  text-align: end;
+  overflow: hidden;
+}
+main #mainContainer #exercicePresentation #thirdElTop {
+  padding-left: 60px;
+  margin-top: 31px;
+  overflow: hidden;
+}
+main #mainContainer #titleCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #mainContainer #titleCenter #animH1Next {
+  overflow: hidden;
+}
+main #mainContainer #titleCenter #underlineTitle {
+  background-color: #fff;
+  height: 3px;
+  width: 900px;
+  text-align: center;
+  position: relative;
+  top: -190px;
+}
+main #mainContainer #btnScrollDown {
+  margin-bottom: 146px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+}
+main #mainContainer #btnScrollDown #btnLink {
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  font-family: "Rebond Grotesque Medium", serif;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+main #mainContainer #btnScrollDown #btnLink :hover::after {
+  content: attr(data-hover);
+}
+main #mainContainer #btnScrollDown #arrowBtn {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #mainContainer #btnScrollDown #arrowBtn img {
+  width: 40%;
+  transform: rotate(180deg);
+}
+main #SecondPart {
+  background-color: #1C1C1C;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main #SecondPart #sectionContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 120px;
+}
+main #SecondPart #sectionContainer #TextPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main #SecondPart #sectionContainer #TextPart #titlePart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-end;
+  overflow: hidden;
+}
+main #SecondPart #sectionContainer #TextPart #titlePart .txtSecondPart {
+  overflow: hidden;
+}
+main #SecondPart #sectionContainer #TextPart #paragraphPart {
+  width: 100%;
+}
+main #SecondPart #sectionContainer #TextPart button {
+  background-color: rgba(255, 255, 255, 0.21);
+  width: 280px;
+  height: 80px;
+  border-radius: 90px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main #SecondPart #sectionContainer #TextPart button span {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+}
+main #SecondPart #sectionContainer #TextPart button h3 {
+  font-size: 16px;
+  line-height: 0;
+  letter-spacing: 0;
+  overflow: visible;
+}
+main #SecondPart #sectionContainer #ImgPart {
+  margin-left: 140px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  position: relative;
+  align-items: center;
+}
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('tom-barrett-2t60-JYQ5pk-unsplash.jpg');
+  background-size: 110vw auto;
+  background-position: center center;
+  clip-path: polygon(30vw 20vh, 70vw 20vh, 70vw 80vh, 30vw 80vh);
+  filter: opacity(0%);
+}
+.loading {
+  display: inline;
+  font-size: 60px;
+  color: #ccc;
+  width: calc(100vw - 60px);
+  margin: 0 30px;
+  transform: translate(calc(-100vw + 100px), 0);
+  text-align: right;
+  overflow: hidden;
+}
+h1 {
+  position: absolute;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: normal;
+}
